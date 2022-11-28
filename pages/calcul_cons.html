@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title> Calculatrice de consommation </title>
+        <link rel="stylesheet" href="./../assets/css/style_calcul_cons.css" />  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=GFS+Didot&family=Playfair+Display&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./../assets/images/outils_conseils/calculette.png">  
+    </head>
+    <body>  
+        <a href="index.html">
+            <button class="button" role="button">Retour</button>
+        </a>
+        
+        <table class="calculatrice">
+            <p id="caption"> Calcul de consommation </p>
+            <tr>
+                <td colspan='4'>
+                    <p> Un appareil avec une simple veilleuse consomme 5W </p>
+                    <p> Un gros électroménager consomme 11W </p>
+                    <p> Un ordinateur en veille consomme 23W </p>
+                </td>
+            </tr>  
+            <!--Affichage centrale de la calculatrice, avec un coté le texte et de l'autre, l'input. De plus, blocage de l'insertion de lettre dans les inputs-->       
+            <tr>
+                <td colspan="3">Appareil avec simple veilleuse  </td>
+                <td colspan="1">
+                    <input class="valid" type="number" placeholder="Entrez un nombre" title="Seulement des nombres" onkeyup="this.value=this.value.replace(/[^\d]/,'')" id="simple_veilleuse" required/>
+                </td> 
+            </tr>
+            <tr>
+                <td colspan="3">Gros électroménager  </td>
+                <td colspan="1">
+                    <input class="valid" type="number" placeholder="Entrez un nombre" title="Seulement des nombres" onkeyup="this.value=this.value.replace(/[^\d]/,'')" id="gr_elec" required/>
+                </td> 
+            </tr>            
+            <tr>
+                <td colspan="3">Ordinateur  </td>
+                <td colspan="1">
+                    <input class="valid" type="number" placeholder="Entrez un nombre" title="Seulement des nombres" onkeyup="this.value=this.value.replace(/[^\d]/,'')" id="ordi" required />
+                </td> 
+            </tr>
+            <div>
+                <td colspan="4">
+                    <button class="button-85" id="btn" value="Calculer" disabled>Calculer</button>
+                </td>
+            </div>
+            <!--Affichage des résultats effectué en JS-->
+            <tr>
+                <td colspan="3">
+                    Votre consommation : 
+                </td>
+                <td colspan="1">
+                    <div id="total"> </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    Prix total de la consommation : 
+                </td>
+                <td colspan="1">
+                    <div id="total_cons"> </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    Nombre total de kebab :  
+                </td>
+                <td colspan="1">
+                    <div id="total_keb"> </div>
+                </td>
+            </tr>
+            <!--Affichage des kebabs-->  
+            <div>
+                <td colspan="4">
+                    <button class="button-85" role="button" id="btnKeb">Afficher les kebabs</button>
+                </td>
+            </div>      
+            <tr>
+                <td colspan='4'>
+                    <div id="affiKeb">
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+
+        <script src="./../js/calcul_cons.js"></script>
+    </body>
+</html>

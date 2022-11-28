@@ -1,0 +1,166 @@
+html 
+{	font-size:15px;
+font-family:'Montserrat', sans-serif;
+}
+*
+{	box-sizing:border-box;
+	margin: 0px;
+	
+}
+*::-webkit-scrollbar {
+	display: none;
+  }
+header
+{	background:#242424;
+	opacity:0.6;
+	height:125px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	position:fixed;
+	top:0px;
+	left:0px;
+	z-index :999 ;
+	width:100%;
+}
+header > nav  img
+{	
+	width:275px;
+	height:auto;
+}
+
+a
+{	text-decoration:none;
+	color:white;
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+header > nav{
+	width:70%;
+	display: flex;
+}
+
+nav > div { 
+	display: flex;
+	flex:1;
+	justify-content: space-around;
+	align-items: center;
+}
+
+body > div{
+	height :100vh;
+	background :transparent ;
+	position :relative ;
+	overflow :hidden
+}
+
+
+h1{
+	text-align: center;
+	font-weight: normal;
+	font-family: 'bebas neue', sans-serif; 
+	font-size: 40px;
+	text-transform:capitalize;
+	color: #364253;
+
+}
+
+section > div{
+display: flex;
+justify-content: center;
+padding: 20px 20px;
+}
+
+figure{
+
+display: flex;
+flex-direction: column-reverse;
+text-align: center;
+
+}
+
+video{ 
+	min-width:100%;
+	min-height:100%;
+	object-fit: cover;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translateX(-50%) translateY(-50%);
+	overflow:hidden;
+	z-index: -213;
+	
+	}
+
+figcaption{
+	margin-bottom: 10px;
+}
+
+
+#gniduweb {
+	margin-top: 20%;
+	display: flex;
+	justify-content: center;
+	font-size:250px;
+	color:white;
+	
+	transition: all 1s;
+	animation: spawn 2s ease;
+	}
+
+
+
+@keyframes spawn {
+	0% {
+		opacity: 0%;
+	}
+
+	50% {
+		opacity: 50%;
+	}
+
+	100% {
+		opacity: 100%;
+	}
+}
+
+
+#gniduweb:hover {
+	transform: scale(1.1);
+}
+
+#insta {
+
+	width: 60px;
+	position: absolute;
+	right: 6%;
+	bottom:2%;
+	transition:all 1s;
+}
+
+#insta:hover {transform:scale(1.2);
+
+}
+
+
+
+
+#twitter{
+	width: 60px;
+	position: absolute;
+	right: 1%;
+	bottom:2%;
+	transition:all 1s;
+}	
+
+#twitter:hover {transform:scale(1.2);}
+
+
+div > a:hover{transform:scale(1.05);}
+
+
+div > a {transition:all 0.25s;}
+
+
+body{background-color: rgb(39, 39, 39);}
