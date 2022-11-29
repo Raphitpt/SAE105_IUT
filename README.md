@@ -1,5 +1,11 @@
 # SAE105_IUT
 Projet SAE de l'IUT
-Version 0.1
+Watt Is The Question
+Version 0.9
 
-Version noah
+✅Calculatrice JS
+✅Page PHP réponse
+✅Crée le CSS du frigo
+✅Interrupteur + calque
+✅Formulaire en PHP
+☑️Site GniDuWeb
