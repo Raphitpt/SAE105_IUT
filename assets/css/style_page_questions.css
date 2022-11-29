@@ -3,36 +3,22 @@ html {
     font-family: "Roboto", sans-serif;
   }
 
+
   * {
     margin: 0;
     padding: 0;
   }
 
   .response {
-    background-color: antiquewhite;
+    background-color: #F5F5DC;
     margin: 2rem auto;
     padding: 1rem;
+    border-radius: 5px;
   }
 
   h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
-  }
-
-  hr {
-    border-color: aquamarine;
-    margin: 1rem 0;
-  }
-
-  code {
-    color: rgb(230, 70, 70);
-  }
-
-  .element-de-cours {
-    background-color: rgb(42, 33, 30);
-    color: white;
-    padding: 2rem;
-    margin: 1rem;
   }
 
   /* utilitaires */
@@ -42,13 +28,19 @@ html {
     margin-right: auto;
     margin-top: 3rem;
   }
-
-  .badge {
-    display: block;
-    width: 10%;
+  span{
+    color: red;
+    font-style: italic;
+  }
+  #question{
+    color: #004643;
     text-align: center;
-    background-color: #24d59a;
+    font-size: 1.5em;
     font-weight: bold;
-    padding: 0.25rem;
-    border-radius: 5px;
+    font-family: 'Hind', sans-serif;
+    margin-bottom: 20px;
+  }
+  #hautDiv{
+    text-align: left;
+    font-size: 0.9em;
   }

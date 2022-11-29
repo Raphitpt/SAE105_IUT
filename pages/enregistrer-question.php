@@ -9,17 +9,19 @@
 <body>
     
 <?php
-    session_start();
-    $_SESSION['email'] = $_POST['zt_email'];
-    $_SESSION['question'] = $_POST['zt_question']; 
-    $zt_email = $_POST['zt_email'];
-    $zt_question = $_POST['zt_question'];
-    $today = date("Y-m-d H:i:s");
-    $points = "----------------------------------------";
-    file_put_contents('./question.txt', "$today", FILE_APPEND);
-    file_put_contents('./question.txt', "\n\n$zt_email", FILE_APPEND);
-    file_put_contents('./question.txt', "\n\n$zt_question", FILE_APPEND);
-    file_put_contents('./question.txt', "\n\n$points\n\n", FILE_APPEND);
+    $_POST['zt_question'] = str_replace("\r\n",' <br/> ',$_POST['zt_question']);
+    $tableau=[
+        $_POST['zt_email'],
+        $zt_question= $_POST['zt_question']. "\r----------------------------------------",
+        $today = date("Y-m-d H:i:s"),
+        
+    ];
+    var_dump($tableau);
+    file_put_contents('./question.txt', "\r$tableau[2]\n", FILE_APPEND);
+    file_put_contents('./question.txt', "$tableau[0]", FILE_APPEND);
+    file_put_contents('./question.txt', "\n$tableau[1]", FILE_APPEND);
+
+
     
 ?>
 
