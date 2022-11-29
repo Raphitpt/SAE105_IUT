@@ -1,0 +1,54 @@
+html {
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  .response {
+    background-color: antiquewhite;
+    margin: 2rem auto;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  hr {
+    border-color: aquamarine;
+    margin: 1rem 0;
+  }
+
+  code {
+    color: rgb(230, 70, 70);
+  }
+
+  .element-de-cours {
+    background-color: rgb(42, 33, 30);
+    color: white;
+    padding: 2rem;
+    margin: 1rem;
+  }
+
+  /* utilitaires */
+  .container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+  }
+
+  .badge {
+    display: block;
+    width: 10%;
+    text-align: center;
+    background-color: #24d59a;
+    font-weight: bold;
+    padding: 0.25rem;
+    border-radius: 5px;
+  }
