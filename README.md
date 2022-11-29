@@ -1,7 +1,9 @@
-# SAE105_IUT
-## Projet SAE de l'IUT  
-## Watt Is The Question  
-Version 0.9  
+# Watt Is The Question 
+
+## Projet SAE-105 de l'IUT  
+ 
+###### Version 0.9  
+
 ### Fait :  
 
 ✅ - Calculatrice JS  
@@ -13,4 +15,4 @@ Version 0.9
 ### A faire :  
 
 ☑️ - Site GniDuWeb  
-☑️ - Faire la mosaïque  
+☑️ - Faire la mosaïque de la page d'accueil    
