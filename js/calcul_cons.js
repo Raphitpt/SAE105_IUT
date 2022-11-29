@@ -62,7 +62,7 @@ window.addEventListener('DOMContentLoaded', function() {
     let affKebVal = parseInt(affKeb);
     let affichage = ""
     for (let i=1; i<=affKeb; i++) {
-        affichage = affichage + "<a href='https://goo.gl/maps/yv4TvD7kJbofiKas9' target='_blank'><img src='./assets/images/kebab.gif'></a>";
+        affichage = affichage + "<a href='https://goo.gl/maps/yv4TvD7kJbofiKas9' target='_blank'><img src='./../assets/images/kebab.gif'></a>";
     }
     console.log(affKebVal)
     

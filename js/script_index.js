@@ -18,13 +18,13 @@ window.addEventListener('load', function() {
 
         if (calque_noir.className == "on") {
             calque_noir.className = "off";
-            button_light.src = "./assets/images/off.png";
+            button_light.src = "./../assets/images/off.png";
             localStorage.setItem("position", calque_noir.className);
             localStorage.setItem("lastBtnPos", button_light.src);
         } 
         else {
             calque_noir.className = "on";
-            button_light.src = "./assets/images/on.gif";
+            button_light.src = "./../assets/images/on.gif";
             localStorage.setItem("position", calque_noir.className);
             localStorage.setItem("lastBtnPos", button_light.src);
         }
