@@ -46,6 +46,7 @@ main{
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    text-align: justify;
     font-size: 1.1em;
     color: #222222;
 }
@@ -112,5 +113,5 @@ article > span {
     display: block;
     margin: auto;
     background-repeat: no-repeat;
-    background-image: url("./../images/cons_frigo/trait.svg");
+    background-image: url("./../images/cons_frigo/trait1.svg");
 }
