@@ -1,6 +1,6 @@
 # SAE105_IUT
-##titre Projet SAE de l'IUT  
-##titre Watt Is The Question  
+## Projet SAE de l'IUT  
+## Watt Is The Question  
 Version 0.9  
 
 ✅Calculatrice JS  
