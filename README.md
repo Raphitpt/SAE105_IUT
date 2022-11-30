@@ -8,7 +8,7 @@
 
 ✅ - Calculatrice JS  
 ✅ - Page PHP réponse  
-✅ - Crée le CSS du frigo  
+✅ - Créer le CSS du frigo  
 ✅ - Interrupteur + calque  
 ✅ - Formulaire en PHP  
 
