@@ -9,7 +9,18 @@ window.addEventListener('load', function() {
     calque_noir.className = localStorage.getItem('position');
     button_light.src = localStorage.getItem('lastBtnPos');
 })
-   
+// Initialise les valeurs si c'est la première fosi sur le site 
+    if (localStorage.position == null)
+        {
+            calque_noir.className = "off";
+            localStorage.setItem("position", calque_noir.className);
+        };  
+
+    if (localStorage.lastBtnPos == null)
+        {
+            button_light.src = "assets/images/off.png";
+            localStorage.setItem("lastBtnPos", button_light.src);
+        };  
 
 // Gestion du calque noir avec interrupteur + ajout de la valeur de la dernière position de la class au localStorage
     interrupteur.addEventListener("click", function () {
