@@ -4,6 +4,7 @@
 	<title>WATT IS THE QUESTION</title>
 	<meta charset="utf-8">
 	<link  href="./assets/css/style_page_accueil.css" rel="stylesheet" type='text/css'>
+	<link rel="icon" type="image/png" href="./assets/images/ico.png" />
 </head>
 <body>
 	<div id="calque_noir" class="off">
@@ -14,7 +15,7 @@
 	<header>
 		<h1>WATT IS THE QUESTION</h1>
 		<h2>Le site qui répond à toutes les questions que vous vous posez sur l'énergie</h2>
-	</header>
+</header>
 	<main>
 		<div id="questions">
 			<a href="./pages/cons_frigo.html" id="bloc_gauche">
@@ -138,7 +139,7 @@
 			
 				<div>
 					<h2 class="titre">Bredouille, vous n'avez pas trouvé la réponse à votre question</h2>
-					<form action="./pages/enregistrer-question.php" method="POST">
+					<form action="./pages/enregistrer-question.php" onsubmit="alert('Votre question a bien été transmise à une équipe compétente !')"  method="POST">
 						<input id="zt_email" name="zt_email" type="email" required placeholder="Votre adresse mail">
 						<textarea id="zt_question" name="zt_question" maxlength="500" minlength="4" required placeholder="Votre question"></textarea>
 						<input type="submit" id="bouton">
@@ -164,4 +165,5 @@
 	</main>		
 	<script src="./js/script_index.js"></script>
 </body>
+
 </html>
