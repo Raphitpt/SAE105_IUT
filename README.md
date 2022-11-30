@@ -11,8 +11,9 @@
 ✅ - Créer le CSS du frigo  
 ✅ - Interrupteur + calque  
 ✅ - Formulaire en PHP  
+✅ - Faire la mosaïque de la page d'accueil  
 
 ### A faire :  
 
 ☑️ - Site GniDuWeb  
-☑️ - Faire la mosaïque de la page d'accueil    
+☑️ - Arranger la mosaïque pour de bon gout  
