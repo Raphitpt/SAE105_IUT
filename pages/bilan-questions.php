@@ -40,7 +40,7 @@
             echo '<h1>Bilan des '.$compteur. ' questions déposées</h1>';
           };
           for ($i = 0; $i < $compteur; $i++) {
-            echo '<div class="response"><p id=hautDiv>le '.$monTab[$i]['date'].' par <span>'.$monTab[$i]['zt_email'].'</span></p><br><p id="question">'.$monTab[$i]['zt_question'].'</p><a id="repondre" href="mailto:'.$monTab[$i]['zt_email'].'">Répondre</a></div>';} 
+            echo '<div class="response" style="white-space:normal;"><p id=hautDiv>le '.$monTab[$i]['date'].' par <span>'.$monTab[$i]['zt_email'].'</span></p><br><p id="question">'.$monTab[$i]['zt_question'].'</p><a id="repondre" href="mailto:'.$monTab[$i]['zt_email'].'">Répondre</a></div>';} 
           
         
         
