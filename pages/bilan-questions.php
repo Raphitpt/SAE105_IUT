@@ -18,7 +18,7 @@
   <div class="container">
     
     <?php       
-        error_reporting(E_ALL ^ E_NOTICE);
+        error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
         $file =  file_get_contents('question.txt',FILE_SKIP_EMPTY_LINES);
         $monTab = array();
         $Separateur = "\n";
@@ -41,7 +41,12 @@
             echo '<h1>Bilan des '.$compteur. ' questions déposées</h1>';
           };
           for ($i = 0; $i < $compteur; $i++) {
-            echo '<div class="reponse"><p id=hautDiv>le '.$monTab[$i]['date'].' par <span>'.$monTab[$i]['zt_email'].'</span></p><br><p id="question">'.$monTab[$i]['zt_question'].'</p><a id="repondre" href="mailto:'.$monTab[$i]['zt_email'].'">Répondre</a></div>';} 
+            echo '<div class="reponse">
+            <p id=hautDiv>le '.$monTab[$i]['date'].' par 
+            <span>'.$monTab[$i]['zt_email'].'</span>
+            </p><br><p id="question">'.$monTab[$i]['zt_question'].'</p>
+            <a id="repondre" href="mailto:'.$monTab[$i]['zt_email'].'">Répondre</a>
+            </div>';} 
           
         
         

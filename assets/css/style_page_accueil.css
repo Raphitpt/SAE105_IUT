@@ -10,7 +10,7 @@ body
 }
 /* Réglages généraux */
 a
-{	text-decoration:none;tt
+{	text-decoration:none;
 }
 
 main > div 
@@ -168,16 +168,9 @@ header h1
 	left: 0;
 	position: absolute;
 	top: 0;
+	border-radius: 10px;
 	
 }
-/*quand hover, le figcaption change de couleur avec la couleur qui viens vers le haut */
-
-#questions figure:hover figcaption
-{	background: rgb(190, 0, 243);
-	color:white;
-	translate: (0,2);
-}
-
 
 #questions figure img:hover {
 	transform: scale(1.02);

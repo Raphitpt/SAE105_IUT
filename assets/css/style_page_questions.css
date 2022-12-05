@@ -8,18 +8,14 @@ html {
 * {
     margin: 0;
     padding: 0;
-    overflow-wrap: break-word;
+
  }
 
 .reponse {
     background-color: #F5F5DC;
     margin: 2rem auto;
     padding: 10px;
-    border-radius: 5px;
-
-
-
-    
+    border-radius: 5px;    
 }
 
 h1 {
@@ -42,8 +38,7 @@ span{
     font-style: italic;
   }
 #repondre{
-    margin-bottom: -10px;
-    margin-left: 95%;
+    text-align:bottom;
     text-decoration: none;
     color: #004643;  
   }
@@ -54,6 +49,7 @@ span{
     font-weight: bold;
     font-family: 'Hind', sans-serif;
     margin-bottom: 20px;
+    overflow-wrap: break-word;
   }
 #hautDiv{
     text-align: left;
