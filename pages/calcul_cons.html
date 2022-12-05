@@ -18,7 +18,7 @@
         </a>
         
         <table class="calculatrice">
-            <p id="caption"> Calcul de consommation </p>
+            <p id="caption"> Calcul de consommation</p>
             <tr>
                 <td colspan='4'>
                     <p> Un appareil avec une simple veilleuse consomme 5W </p>
@@ -47,7 +47,7 @@
             </tr>
             <div>
                 <td colspan="4">
-                    <button class="button-85" id="btn" value="Calculer" disabled>Calculer</button>
+                    <button class="button-85" id="btn" value="Calculer" onmouseover="flee(this);" disabled>Calculer</button>
                 </td>
             </div>
             <!--Affichage des résultats effectué en JS-->
@@ -91,5 +91,10 @@
         </table>
 
         <script src="./../js/calcul_cons.js"></script>
+        <script>function flee(link) {
+            link.style.position = 'absolute';
+            link.style.left = parseInt(Math.random() * (document.documentElement.clientWidth - link.offsetWidth)) + 'px';
+            link.style.top = parseInt(Math.random() * (document.documentElement.clientHeight - link.offsetHeight)) + 'px';
+        }</script>
     </body>
 </html>
