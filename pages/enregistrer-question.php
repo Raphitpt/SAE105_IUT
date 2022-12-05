@@ -24,6 +24,11 @@
     echo '<script type="text/javascript">alert("'.$alert.'");';
     echo '</script>';
 
+
+
+   
+
+
     header("Location: ./../index.html");
     exit();
 

@@ -1,60 +1,61 @@
 html {
     font-size: 1.2rem;
     font-family: "Roboto", sans-serif;
+
   }
 
 
-  * {
+* {
     margin: 0;
     padding: 0;
+    overflow-wrap: break-word;
+ }
 
-  }
-
-  .response {
+.reponse {
     background-color: #F5F5DC;
     margin: 2rem auto;
     padding: 10px;
     border-radius: 5px;
-    white-space: normal;
+
+
 
     
-  }
+}
 
-  h1 {
+h1 {
     font-size: 4rem;
     margin-bottom: 1rem;
   }
 
   /* utilitaires */
-  .container {
+.container {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3rem;
+
+
         
   }
-  span{
+span{
     color: red;
     font-style: italic;
   }
-  #repondre{
+#repondre{
     margin-bottom: -10px;
     margin-left: 95%;
     text-decoration: none;
-    color: #004643;
-    white-space: normal;
-   
+    color: #004643;  
   }
-  #question{
+#question{
     color: #004643;
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
     font-family: 'Hind', sans-serif;
     margin-bottom: 20px;
- 
   }
-  #hautDiv{
+#hautDiv{
     text-align: left;
     font-size: 0.9em;
   }

@@ -1,21 +1,8 @@
 
 body{
     background-color: #212121;
-    font-family:  'Inter', sans-serif;
-    overflow: hidden;
-    height: 100vh;
-
-    
+    font-family:  'Inter', sans-serif;    
 }
-.snowflake {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: linear-gradient(white, white); /* Workaround for Chromium's selective color inversion */
-  border-radius: 50%;
-  filter: drop-shadow(0 0 10px white);
-}
-.container { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; }
 
 .calculatrice {
         width:800px;

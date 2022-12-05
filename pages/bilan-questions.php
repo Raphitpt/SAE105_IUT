@@ -27,12 +27,13 @@
         foreach($parseLine as $line) {
             $dec = explode($Separateur, $line);
             array_push($monTab, array(
-                'date'           =>   $dec[0],    // = AAA
-                'zt_email'        =>   $dec[1],    // = BBB
+                'date'           =>   $dec[0],    
+                'zt_email'        =>   $dec[1],    
                 'zt_question'      =>   $dec[2],
 
             ));
           }
+
           $compteur = count($monTab) - 1;
           if ($compteur == 0){
             echo "<h1>Il n'y a aucune question pour le moment</h1>";
@@ -40,14 +41,14 @@
             echo '<h1>Bilan des '.$compteur. ' questions déposées</h1>';
           };
           for ($i = 0; $i < $compteur; $i++) {
-            echo '<div class="response" style="white-space:normal;"><p id=hautDiv>le '.$monTab[$i]['date'].' par <span>'.$monTab[$i]['zt_email'].'</span></p><br><p id="question">'.$monTab[$i]['zt_question'].'</p><a id="repondre" href="mailto:'.$monTab[$i]['zt_email'].'">Répondre</a></div>';} 
+            echo '<div class="reponse"><p id=hautDiv>le '.$monTab[$i]['date'].' par <span>'.$monTab[$i]['zt_email'].'</span></p><br><p id="question">'.$monTab[$i]['zt_question'].'</p><a id="repondre" href="mailto:'.$monTab[$i]['zt_email'].'">Répondre</a></div>';} 
           
         
         
         
       ?>
-
-<hr>
+  </div>
+  <hr>
       </body>
 
 
