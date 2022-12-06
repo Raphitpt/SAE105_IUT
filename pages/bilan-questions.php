@@ -18,23 +18,29 @@
   <div class="container">
     
     <?php       
-        error_reporting(E_ALL ^ E_NOTICE ^ E_WARNING);
+        
         $file =  file_get_contents('question.txt',FILE_SKIP_EMPTY_LINES);
         $monTab = array();
         $Separateur = "\n";
         $parseLine = explode("\r----------------------------------------",$file);
-         
-        foreach($parseLine as $line) {
-            $dec = explode($Separateur, $line);
-            array_push($monTab, array(
-                'date'           =>   $dec[0],    
-                'zt_email'        =>   $dec[1],    
-                'zt_question'      =>   $dec[2],
+          
 
-            ));
-          }
+  foreach($parseLine as $line) {
+    $dec = explode($Separateur, $line);
+    if (empty($dec[0])) {
+      break;
+    }
+  else
+    {
+      array_push($monTab, [
+        'date'           =>   $dec[0],    
+        'zt_email'        =>   $dec[1],    
+        'zt_question'      =>   $dec[2]]);
+      
+    }
+};
 
-          $compteur = count($monTab) - 1;
+          $compteur = count($monTab);
           if ($compteur == 0){
             echo "<h1>Il n'y a aucune question pour le moment</h1>";
           } else {

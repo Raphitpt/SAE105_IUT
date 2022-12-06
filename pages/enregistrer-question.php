@@ -20,16 +20,13 @@
     file_put_contents('./question.txt', "\r$tableau[2]\n", FILE_APPEND);
     file_put_contents('./question.txt', "$tableau[0]", FILE_APPEND);
     file_put_contents('./question.txt', "\n$tableau[1]", FILE_APPEND);
-    $alert = "Your message has been sent to ";
-    echo '<script type="text/javascript">alert("'.$alert.'");';
-    echo '</script>';
 
 
 
    
 
 
-    header("Location: ./../index.html");
+    header("Location: ./../index.php?confirm=ok");
     exit();
 
 

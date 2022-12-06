@@ -150,7 +150,7 @@
 			
 				<div>
 					<h2 class="titre">Bredouille, vous n'avez pas trouvé la réponse à votre question</h2>
-					<form action="./pages/enregistrer-question.php" onsubmit="alert('Votre question a bien été transmise à une équipe compétente !')"  method="POST">
+					<form action="./pages/enregistrer-question.php" method="POST">
 						<input id="zt_email" name="zt_email" type="email" required placeholder="Votre adresse mail">
 						<textarea id="zt_question" name="zt_question" maxlength="500" minlength="4" required placeholder="Votre question"></textarea>
 						<input type="submit" id="bouton">
@@ -176,6 +176,12 @@
 		
 	</main>		
 	<script src="./js/script_index.js"></script>
+	<?php 
+		if($_GET['confirm'] == 'ok'){
+		echo "<scipt>alert('Votre question a bien été transmise à une équipe compétente !');</script>";
+		}
+	?>
+
 </body>
 
 </html>
