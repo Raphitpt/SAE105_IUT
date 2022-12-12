@@ -163,28 +163,40 @@ div > a:hover{transform:scale(1.05);}
 div > a {transition:all 0.25s;}
 
 
-body{background-color: rgb(39, 39, 39);}
-
 #agence{
 	color:white;
-margin-top:50px;
-font-size: 90px;
+	margin-top:120px;
+	font-size: 90px;
 }
 
 #prod{
+	color: rgb(39, 39, 39);
+	margin-top:120px;
+	font-size: 90px;
+}
+#contact {
 	color:white;
-margin-top:100px;
-font-size: 90px;
+	margin-top:120px;
+	font-size: 90px;
 }
 
 
-.agence{height:100vh;
-width:auto;}
-
-
-.prod{
+#agenceDiv{
 	height:100vh;
 	width:auto;
-
+	background-color: rgb(39, 39, 39);
 }
+
+
+#prodDiv{
+	height:100vh;
+	width:auto;
+	background-color: aliceblue;
 	
+}
+
+#contactDiv{
+	height:100vh;
+	width:auto;
+	background-color: rgb(39, 39, 39);
+}

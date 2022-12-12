@@ -176,10 +176,15 @@
 		
 	</main>		
 	<script src="./js/script_index.js"></script>
-	<?php 
+	<script>const stateObj = { 'index.php?confirm=ok#bredouille' : 'index' };
+			history.pushState(stateObj, '', 'index.php#bredouille');
+	</script>
+	<?php
+	if(isset($_GET['confirm'])){
 		if($_GET['confirm'] == 'ok'){
-		echo "<scipt>alert('Votre question a bien été transmise à une équipe compétente !');</script>";
-		}
+		echo "<script>alert('Votre question a bien été transmise à une équipe compétente !');</script>";
+		}}
+
 	?>
 
 </body>

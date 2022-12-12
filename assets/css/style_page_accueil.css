@@ -62,17 +62,20 @@ header
 	color:white;
 	padding:100px;
 
+
 }
 header h2
 {	margin-top:25px;
 	font-size:2rem;
 	color:rgba(0, 0, 0, 0.721);
 	font-weight: bold;
+
 }
 header h1
 {	font-size:4rem;
 	color: #ea4335;
 	font-family: 'Polar Snow', sans-serif;
+
 }
 
 

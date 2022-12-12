@@ -26,7 +26,7 @@
    
 
 
-    header("Location: ./../index.php?confirm=ok");
+    header("Location: ./../index.php?confirm=ok#bredouille");
     exit();
 
 
