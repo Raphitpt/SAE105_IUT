@@ -177,7 +177,7 @@
 	</main>		
 	<script src="./js/script_index.js"></script>
 	<script>const stateObj = { 'index.php?confirm=ok#bredouille' : 'index' };
-			history.pushState(stateObj, '', 'index.php#bredouille');
+			history.pushState(stateObj, '', 'index.php');
 	</script>
 	<?php
 	if(isset($_GET['confirm'])){

@@ -1,47 +1,167 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<title>Boite à films - version 1</title>
+	<title>GniDuWeb</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="./style.css" type="text/css" media="all">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<link rel="preconnect" href="https://fonts.gstatic.com"> 
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./../assets/bootstrap/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  	<script src="./../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 	<header>
 		<nav>
 			<a href="#"><img src="./medias/imgs/logo.png" alt="Logo de la boite à films" /></a>
-			<div >
-				<a href="#agenceDiv">L'agence</a>
-			    <a href="#prodDiv">Nos productions</a>
-				<a href="#contactDiv">Contact</a>
+			<div>
+				<a href="#agenceDiv" class="menu">L'agence</a>
+			    <a href="#prodDiv" class="menu">Nos productions</a>
+				<a href="#contactDiv" class="menu">Contact</a>
 			</div>
 		</nav>
 	</header>
 	<div id="h2effet">
 		<img id="twitter" src="./medias/imgs/twitter.png" alt="twitter" />
-		<img id="insta" src="./medias/imgs/insta.webp" alt="instagram" />
+		<img id="insta" src="./medias/imgs/insta.png" alt="instagram" />
+		<img id="linkdn" src="./medias/imgs/linkdn.png" alt="Linkedin" />
 		<h1 id="gniduweb">gniduweb</h1>
 		<video id="intro" src="./medias/videos/video-intro.mp4" autoplay muted loop>
 		</video>
 	</div>
 	<div id="agenceDiv">
 		<h1 id="agence">L'agence</h1>
-		<div>
-			
-			
+		<div id="agence_pos">
+			<div id="agence_left">
+				<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+					<img id="raph" class="rounded-circle" src="./medias/imgs/Raphaël.png">
+					<img id="noah" class="rounded-circle" src="./medias/imgs/noah.png">
+					<div class="carousel-inner">
+						
+					  <div class="carousel-item active">
+						<img src="./medias/imgs/angoulême.jpg" class="d-block w-100" alt="Photo d'Angouleme">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>Angoulême</h5>
+							<p>Charente, Nouvelle Aquitaine, France</p>
+						</div>
+					  </div>
+					  <div class="carousel-item">
+						<img src="./medias/imgs/agence_inside.jpg" class="d-block w-100" alt="Intérieur de l'agence">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>Break Room</h5>
+							<p>C'est ici que les meilleures idées sont imaginées.</p>
+						  </div>
+					  </div>
+					  <div class="carousel-item">
+						<img src="./medias/imgs/open_space.jpg" class="d-block w-100" alt="Open Space GniDuWeb">
+						<div class="carousel-caption d-none d-md-block">
+							<h5>Open Space</h5>
+							<p>C'est donc ici que les idées sont traduites en code</p>
+						  </div>
+					  </div>
+					</div>
+				  </div>
+			</div>
+			<div id="agence_right">
+				<h2 id="agence_title">COUCOU LES BEBOUS</h2>
+				<p>Texte</p>
+			</div>
 		</div>
 	</div>
 	<div id="prodDiv">
 		<h1 id="prod">Nos productions</h1>
 		<div>
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+				<div class="carousel-indicators">
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+				  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="carrous">
+						  <div class="exemple">
+							<img class="logos" src="./medias/imgs/witq_logo.png">
+							<a href="./../index.php" target="_blank"><img class="capture" src="./medias/imgs/witq_capt.jpg"></a>
+						  </div>
+						  <div class="exemple_texte">
+							  <h2 class="name">WATT IS THE QUESTION</h2>
+							  <p>WattIs The Question est née pour faire face à l'ampleur croissante de la crise énergétique, l'association eco'citoyens a décidé d'acquérir un site web destiné à répondre à toutes les questions que se pose le grand public sur la consommation électrique. À cette fin, le comité de pilotage dédié à ce projet a établi une liste d'attentes pour ce nouveau support de communication.</p>
+						  </div>
+						</div>
+				  </div>
+				  	<div class="carousel-item">
+						<div class="carrous">
+							<div class="exemple">
+								<img class="logos" src="./medias/imgs/Netflix-new-icon.png">
+								<img class="capture" src="./medias/imgs/net_capt.jpg">
+							</div>
+							<div class="exemple_texte">
+								<h2 class="name">NETFLIX</h2>
+								<p>Netflix est une entreprise multinationale américaine créée à Scotts Valley en 1997 par Reed Hastings et Marc Randolph appartenant au secteur d'activité des industries créatives. Elle est spécialisée dans la distribution et l'exploitation d'œuvres cinématographiques et télévisuelles par le biais d'une plateforme dédiée au service de vidéo à la demande. Son siège social se situe à Los Gatos en Californie.</p>
+							</div>
+				  		</div>
+					</div>
+					<div class="carousel-item">
+						<div class="carrous">
+					  		<div class="exemple">
+								<img class="logos" src="./medias/imgs/deezer-logo.jpg">
+						 		<img class="capture" src="./medias/imgs/deez_capt.jpg">
+					  		</div>
+					  		<div class="exemple_texte">
+						  		<h2 class="name">DEEZER</h2>
+						  		<p>Deezer est une plateforme française de distribution numérique dédiée à l'écoute de musique en streaming lancé en août 2007. Ce service permet l'écoute de musiques et podcasts, issus d'un catalogue négocié avec les labels regroupant plus de 90 millions de titres en 2022. Deezer éditorialise son contenu par l'établissement de playlists ainsi que son algorithme Flow, qui recommande de nouveaux morceaux selon les goûts musicaux de l’utilisateur.</p>
+					  		</div>
+						</div>
+					</div>
+
+					<div class="carousel-item">
+						<div class="carrous">
+					  		<div class="exemple">
+								<img class="logos" src="./medias/imgs/icloud_logo.png">
+						 		<img class="capture" src="./medias/imgs/icloud_capt.jpg">
+					  		</div>
+					  		<div class="exemple_texte">
+						  		<h2 class="name">ICLOUD</h2>
+						  		<p>iCloud vous aide à garder vos informations les plus importantes (comme vos photos, fichiers et sauvegardes) en toute sécurité, à jour et disponibles sur tous vos appareils. iCloud permet également de partager des photos, des fichiers, des notes et plus encore avec des membres de la famille et des amis. </br>iCloud comprend un compte de messagerie gratuit et 5 Go de stockage gratuit pour vos données. Pour plus de stockage et de fonctionnalités, vous pouvez mettre à niveau vers iCloud+</p>
+					  		</div>
+						</div>
+					</div>
+			  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
 		</div>
 	</div>
 	<div id="contactDiv">
 		<h1 id="contact">Contact</h1>
-		<div></div>s
+		<div id="coucou">
+			<div id="nous">
+				<ul>
+					<li>Angoulême</li>
+					<li>+33 1 23 45 67 89</li>
+					<li>contact@gniduweb.fr</li>
+				</ul>
+			</div>
+			<div id="barre"></div>
+			<form>
+				<h2>Un projet ? Une question ? Nous écrire:</h2>
+				<input type="text" placeholder="NOM" class="contact_input">
+				<input type="mail" placeholder="EMAIL" class="contact_input">
+				<textarea placeholder="MESSAGE" class="contact_input"></textarea>
+				<input type="submit" value="ENVOYER"/>
+			</form>
+		</div>
 	</div>
 
 

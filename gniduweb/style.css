@@ -20,7 +20,7 @@ header
 	position:fixed;
 	top:0px;
 	left:0px;
-	z-index :999 ;
+	z-index :100000 ;
 	width:100%;
 }
 header > nav  img
@@ -29,7 +29,7 @@ header > nav  img
 	height:auto;
 }
 
-a
+.menu
 {	text-decoration:none;
 	color:white;
 	font-size: 1.6em;
@@ -142,7 +142,15 @@ figcaption{
 #insta:hover {transform:scale(1.2);
 
 }
+#linkdn{
+	width: 60px;
+	position: absolute;
+	right: 11%;
+	bottom:2%;
+	transition:all 1s;
+}	
 
+#linkdn:hover {transform:scale(1.2);}
 
 
 
@@ -164,39 +172,201 @@ div > a {transition:all 0.25s;}
 
 
 #agence{
-	color:white;
+	color: rgb(39, 39, 39);
 	margin-top:120px;
 	font-size: 90px;
 }
 
 #prod{
-	color: rgb(39, 39, 39);
+	color:aliceblue;
 	margin-top:120px;
 	font-size: 90px;
 }
 #contact {
-	color:white;
-	margin-top:120px;
+	color:rgb(39, 39, 39);
+	margin-top:50px;
 	font-size: 90px;
+
 }
 
 
 #agenceDiv{
 	height:100vh;
 	width:auto;
-	background-color: rgb(39, 39, 39);
+	background-color: aliceblue;
+	
 }
 
 
 #prodDiv{
 	height:100vh;
 	width:auto;
-	background-color: aliceblue;
+	background-color: rgb(39, 39, 39);
 	
 }
 
 #contactDiv{
-	height:100vh;
-	width:auto;
+	background-color: aliceblue;;
+	height: auto;
+	
+}
+#coucou{
+	display: flex;
+	align-items: center;
+
+}
+form { 
+	max-width:420px; 
+	margin:50px auto; 
+}
+.contact_input{
+	color:rgb(39, 39, 39);
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight:500;
+	font-size: 18px;
+	border-radius: 5px;
+	line-height: 22px;
+	background-color: transparent;
+	border:2px solid rgb(39, 39, 39);
+	transition: all 0.3s;
+	padding: 13px;
+	margin-bottom: 15px;
+	width:100%;
+	box-sizing: border-box;
+	outline:0;
+}
+#nous{
+	width:50%;
+	height: auto;
+}
+#barre{
 	background-color: rgb(39, 39, 39);
+	width: 2px;
+	height: 300px;
+}
+textarea {
+	height: 150px;
+	line-height: 150%;
+	resize:vertical;
+  }
+  [type="submit"] {
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	width: 100%;
+	background:rgb(39, 39, 39);
+	border-radius:5px;
+	border:0;
+	cursor:pointer;
+	color:aliceblue;
+	font-size:24px;
+	padding-top:10px;
+	padding-bottom:10px;
+	transition: all 0.3s;
+	margin-top:-4px;
+	font-weight:700;
+  }
+  [type="submit"]:hover { background:rgb(98, 98, 98); }
+  h2{
+	color: rgb(39, 39, 39);
+	margin-bottom:15px;
+	font-size: 20px;
+  }
+  .name{
+	color: aliceblue;;
+	margin-bottom:15px;
+	font-size: 2em;
+  }
+  .carrous{
+	width: auto;
+	height: 70vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  }
+  .exemple{
+	height: auto;
+	position: relative;
+  }
+  .capture{
+	width: 95vh;
+	height: auto;
+	margin-left: 50px;
+	border-radius: 10px;
+	z-index: -1000;
+}
+  .exemple_texte{
+	color:aliceblue;
+	margin-left: 10vh;
+	text-align: start;
+	padding-right: 100px;
+  }
+.logos{
+	position: absolute;
+	width: 10%;
+	top: -50px;
+	left: 20%;
+	height: auto;
+	border-radius: 10px;
+	filter: drop-shadow(10px 10px 10px black);
+	z-index: 1000;
+	transition: all 1s;
+}
+.logos:hover{
+	transform: scale(1.1);
+}
+#carouselExampleSlidesOnly{
+	margin-left: 50px;
+	border-radius: 10px;
+}
+#carouselExampleSlidesOnly img{
+	border-radius: 10px;
+}
+#agence_pos{
+	width: auto;
+	height: 70vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	position: relative;
+}
+#agence_left{
+	width: 50%;
+}
+
+#agence_title{
+	color: rgb(39, 39, 39);
+	margin-bottom:15px;
+	font-size: 2em;
+	font-weight: bold;
+}
+#agence_right{
+	color:rgb(39, 39, 39);
+	margin-left: 10vh;
+	text-align: start;
+	padding-right: 100px;
+}
+#raph{
+	position: absolute;
+	width: 15%;
+	top: -50px;
+	left: -20px;
+	height: auto;
+	filter: drop-shadow(10px 10px 10px black);
+	z-index: 1000;
+	transition: all 1s;
+}
+#raph:hover{
+	transform: scale(1.1);
+}
+#noah{
+	position: absolute;
+	width: 15%;
+	top: -50px;
+	left: 88%;
+	height: auto;
+	filter: drop-shadow(10px 10px 10px black);
+	z-index: 1000;
+	transition: all 1s;
+}
+#noah:hover{
+	transform: scale(1.1);
 }
